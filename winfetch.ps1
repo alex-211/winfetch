@@ -143,16 +143,16 @@ $defaultConfig = @'
 
 # Add a custom info line
 # function info_custom_time {
-#     return @{
-#         title = "Time"
-#         content = (Get-Date)
-#     }
-# }
+     return @{
+         title = "Time"
+         content = (Get-Date)
+     }
+ }
 
 # Configure which disks are shown
 # $ShowDisks = @("C:", "D:")
 # Show all available disks
-# $ShowDisks = @("*")
+  $ShowDisks = @("*") 
 
 # Configure which package managers are shown
 # disabling unused ones will improve speed
@@ -190,24 +190,24 @@ $defaultConfig = @'
     "computer"
     "kernel"
     "motherboard"
-    # "custom_time"  # use custom info line
+    "custom_time"  # use custom info line
     "uptime"
     # "ps_pkgs"  # takes some time
     "pkgs"
     "pwsh"
     "resolution"
     "terminal"
-    # "theme"
+    "theme"
     "cpu"
     "gpu"
-    # "cpu_usage"
+    "cpu_usage"
     "memory"
     "disk"
-    # "battery"
-    # "locale"
-    # "weather"
-    # "local_ip"
-    # "public_ip"
+    "battery"
+    "locale"
+    "weather"
+    "local_ip"
+    "public_ip"
     "blank"
     "colorbar"
 )
